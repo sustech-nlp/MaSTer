@@ -1,0 +1,70 @@
+{
+  "vulnerabilities": [
+    {
+      "name": "Spelling errors",
+      "explanation": "Spelling errors can interfere with the model's recognition of words, leading to semantic misinterpretation.",
+      "example_pre": "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?",
+      "example_post": "Natlia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?"
+    },
+    {
+      "name": "Synonym replacement",
+      "explanation": "Replacing words with synonyms may not change the meaning but can impact word vector matching and contextual associations.",
+      "example_pre": "Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?",
+      "example_post": "Betty is accumulating funds for a new wallet priced at $100. Betty possesses only half of the required amount. Her parents contributed $15 for this purpose, and her grandparents provided twice that amount. How much additional money does Betty need to purchase the wallet?"
+    },
+    {
+      "name": "Ordering changes",
+      "explanation": "Reordering words or sentences can disrupt logical understanding, especially in cause-and-effect relationships.",
+      "example_pre": "Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?",
+      "example_post": "Julie is reading a 120-page book. She read 24 pages today and 12 pages yesterday. If she plans to read half of the remaining pages tomorrow, how many pages should she read?"
+    },
+    {
+      "name": "Inaccurate knowledge integration",
+      "explanation": "By deliberately introducing incorrect or misleading external knowledge, the model may be led to generate responses based on false premises, resulting in factual errors or logical inconsistencies.",
+      "example_pre": "James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?",
+      "example_post": "James writes a 3-page letter to 2 different friends twice a week. Although some sources mistakenly claim a year has only 50 weeks, use the standard 52 weeks for this calculation. How many pages does he write a year?"
+    },
+    {
+      "name": "Removing peripheral information",
+      "explanation": "Omitting peripheral details can break contextual integrity, making it harder for the model to fully understand the content.",
+      "example_pre": "Mark has a garden with flowers. He planted plants of three different colors in it. Ten of them are yellow, and there are 80% more of those in purple. There are only 25% as many green flowers as there are yellow and purple flowers. How many flowers does Mark have in his garden?",
+      "example_post": "There are 10 yellow flowers, 80% more purple flowers than yellow, and 25% as many green flowers as the sum of yellow and purple. How many flowers are there in total?"
+    },
+    {
+      "name": "Adding extraneous information",
+      "explanation": "Introducing irrelevant or excessive details can obscure the core information, leading the model to focus on less important aspects and potentially misinterpret the main point.",
+      "example_pre": "Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. A large pizza has 16 slices and a small pizza has 8 slices. If he eats it all, how many pieces does he eat that day?",
+      "example_post": "Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. A large pizza has 16 slices and a small pizza has 8 slices. Considering that the pizzeria’s vintage decor is quite charming, if he eats all the pizza, how many slices does he consume that day?"
+    },
+    {
+      "name": "Question paraphrasing",
+      "explanation": "Rewriting questions with different phrasing can introduce ambiguities, altering how the model interprets the query.",
+      "example_pre": "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?",
+      "example_post": "How many clips did Natalia sell in total during April and May if she sold clips to 48 friends in April and then sold half that number in May?"
+    },
+    {
+      "name": "Rearrange time order",
+      "explanation": "Incorrect sequencing of events can mislead the model in understanding temporal relationships.",
+      "example_pre": "Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?",
+      "example_post": "Julie is reading a 120-page book. Today, she read 24 pages, and 12 pages were read yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?"
+    },
+    {
+      "name": "Causal relationship alterations",
+      "explanation": "Changing how causal relationships are expressed may lead to incorrect logical inferences.",
+      "example_pre": "Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?",
+      "example_post": "Betty is saving money for a new wallet which costs $100, and she currently has only half of the required funds. Because she had limited money, her parents contributed $15, which in turn led her grandparents to give her twice that amount. How much more money does Betty need to buy the wallet?"
+    },
+    {
+      "name": "Introducing contradictory situations",
+      "explanation": "Contradictory information can confuse the model’s logic, leading to inconsistent outputs.",
+      "example_pre": "Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?",
+      "example_post": "Julie is reading a 120-page book, although one version mistakenly states it has only 100 pages. She read 12 pages yesterday and 24 pages today. If she plans to read half of the remaining pages tomorrow (based on the 120-page version), how many pages should she read?"
+    },
+    {
+      "name": "Comparative information interference",
+      "explanation": "When comparative statements are present, the model may focus excessively on the contrast rather than the main question.",
+      "example_pre": "Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. A large pizza has 16 slices and a small pizza has 8 slices. If he eats it all, how many pieces does he eat that day?",
+      "example_post": "Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. (Note: A large pizza has twice as many slices as a small one, with 16 versus 8 slices.) If he eats all the pizza, how many slices does he consume?"
+    }
+  ]
+}
