@@ -9,7 +9,7 @@ To address this, we introduce **MaSTer (Math Stress Tester)**, an automated fram
 For more details, please refer to our paper: *Toward Automated Robustness Evaluation of Mathematical Reasoning*.
 
 <div align="center">
-  <img src="../fig/overview.png" alt="Framework Overview" width="80%">
+  <img src="./fig/overview.png" alt="Framework Overview" width="80%">
 </div>
 
 *(Please refer to the paper for detailed figures and explanations)*
