@@ -43,7 +43,7 @@ export LITELLM_PROXY_API_BASE="http://0.0.0.0:xxxx/v1/"
 export LITELLM_PROXY_API_KEY="sk-your-key"
 ```
 
-## Reproducing Paper Results
+## Reproducing the Paper Results
 
 The evaluation process operates in two distinct phases: 
 1. **Screening (Data Preparation):** Identifying samples the target model can initially solve correctly.
@@ -96,11 +96,14 @@ python main.py \
 If you find our framework or code useful to your research, please consider citing our work:
 
 ```bibtex
-@inproceedings{hou2025master,
-  title={Toward Automated Robustness Evaluation of Mathematical Reasoning},
-  author={Yutao Hou and Yun Chen and Guanhua Chen},
-  booktitle={Association for Computational Linguistics (ACL)},
-  year={2025}
+@misc{hou2026automatedrobustnessevaluationmathematical,
+      title={Toward Automated Robustness Evaluation of Mathematical Reasoning}, 
+      author={Yutao Hou and Zeguan Xiao and Fei Yu and Yihan Jiang and Ma Shuguang and Zhaoqian Dai and Hailiang Huang and Yun Chen and Guanhua Chen},
+      year={2026},
+      eprint={2506.05038},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.05038}, 
 }
 ```
 
