@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. Configure API Keys
-The framework uses standard LLM evaluation pipelines tracking with `litellm` and `Weights & Biases (wandb)`. Ensure you configure your endpoints in your shell or script before running tests:
+The framework uses standard LLM evaluation pipelines tracking with `litellm` and `wandb`. Ensure you configure your endpoints in your shell or script before running tests:
 
 ```bash
 export WANDB_API_KEY="your_wandb_key"
