@@ -12,7 +12,6 @@ For more details, please refer to our paper: *Toward Automated Robustness Evalua
   <img src="./fig/overview.png" alt="Framework Overview" width="80%">
 </div>
 
-*(Please refer to the paper for detailed figures and explanations)*
 
 ## Getting Started
 
