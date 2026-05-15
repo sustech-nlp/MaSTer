@@ -21,7 +21,7 @@ We provide a Dockerfile in `docker/Dockerfile` that can be used to set up the en
 ```bash
 git clone https://github.com/sustech-nlp/MaSTer.git
 cd MaSTer
-pip install -r requirements.txt
+bash built_env.sh
 ```
 
 ### 2. Configure API Keys
