@@ -21,7 +21,17 @@ We provide a Dockerfile in `docker/Dockerfile` that can be used to set up the en
 ```bash
 git clone https://github.com/sustech-nlp/MaSTer.git
 cd MaSTer
-bash built_env.sh
+conda create -n weakness python=3.10 && conda activate weakness
+
+conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+
+pip install -r requirements.txt
+
+git clone https://github.com/lm-sys/FastChat.git
+cd FastChat
+pip install -e .
+cd ..
+
 ```
 
 ### 2. Configure API Keys
