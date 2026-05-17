@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 from loggers import WandBLogger, logger
 from judges import load_judge
-from conversersold import load_attack_and_target_models
+from conversers import load_attack_and_target_models
 from common import process_target_response, initialize_conversations
 
 
